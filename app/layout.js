@@ -20,7 +20,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "RLSR | Portfolio",
-  description: "Created by Ralph Razonable",
+  description: "Created by Ralph Santiaguel Razonable",
 };
 
 export default function RootLayout({ children }) {
