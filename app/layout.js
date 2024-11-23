@@ -1,9 +1,11 @@
+
 import localFont from "next/font/local";
 import NavBar from "@/app/components/NavBar"
 import Footer from "./components/Footer";
 import "./globals.css";
 import Provider from "./Provider";
 import {ThemeProvider as NextThemesProvider} from "next-themes";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,18 +25,19 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Provider>
-        <NextThemesProvider attribute="class" defaultTheme="dark">
-            <NavBar></NavBar>
-              <main className="my-20">{children}</main>
-              <time datetime="2016-10-25" suppressHydrationWarning />
-            <Footer></Footer>
-          </NextThemesProvider>
-        </Provider>
+        
+          <Provider>
+          <NextThemesProvider attribute="class" defaultTheme="dark">
+              <NavBar></NavBar>
+                <main className="my-20">{children}</main>
+              <Footer></Footer>
+            </NextThemesProvider>
+          </Provider>
+        
       </body>
     </html>
   );

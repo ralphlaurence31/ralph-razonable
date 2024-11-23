@@ -1,4 +1,8 @@
-import React from 'react'
+"use client";
+
+import React, {useEffect} from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from 'next/image'
 import htmlIcon from "@/public/assets/html.png";
 import cssIcon from '@/public/assets/css.png';
@@ -23,9 +27,13 @@ const technologies = [
   ];
 
   function About() {
-  
+
+    useEffect(() => {
+        AOS.init({duration:1200})
+      }, []);
+
   return (
-    <div className='about-me mt-20' id='about-me' data-aos="fade-up">
+    <div className='about-me mt-20' id='about-me'>
 
       <div className='aboutMeText' data-aos="fade-up">
         <p className='text-3xl text-center'>About</p>
