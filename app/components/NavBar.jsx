@@ -4,7 +4,7 @@ import {useTheme} from "next-themes";
 import { useEffect, useState } from "react";
 import React from "react";
 import Image from 'next/image'
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, menu} from "@nextui-org/react";
 import logo from "@/public/assets/logo.png";
 import { IoInformationCircleSharp } from "react-icons/io5";
 import { FaFolder } from "react-icons/fa";
@@ -15,10 +15,10 @@ export default function NavBar() {
   const [mounted, setMounted] = useState(false);
 
   const menuItems = [
-    "Home",
-    "About",
-    "Projects",
-    "Contacts",
+    {menu:"Home", href: "/"},
+    {menu:"About", href: "#about-me"},
+    {menu:"Projects", href: "#my-project"},
+    {menu:"Contact", href: "#contact"},
     
   ];
 
@@ -53,12 +53,12 @@ export default function NavBar() {
 
       <NavbarContent className="hidden sm:flex gap-10" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#" className='hover:text-green-800 hover:border-b-2 border-green-800 flex items-center gap-1 text-xl dark:text-white dark:hover:text-green-700'>
+          <Link color="foreground" href="#about-me" className='hover:text-green-800 hover:border-b-2 border-green-800 flex items-center gap-1 text-xl dark:text-white dark:hover:text-green-700'>
           <IoInformationCircleSharp />About
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" className='hover:text-green-800 hover:border-b-2 border-green-800 flex items-center gap-1 text-xl dark:text-white dark:hover:text-green-700'>
+          <Link color="foreground" href="#my-projects" className='hover:text-green-800 hover:border-b-2 border-green-800 flex items-center gap-1 text-xl dark:text-white dark:hover:text-green-700'>
           <FaFolder />Projects
           </Link>
         </NavbarItem>
@@ -87,14 +87,14 @@ export default function NavBar() {
       </NavbarContent>
       <NavbarMenu className="mt-10">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={`${item.menu}-${index}`}>
             <Link
               color="foreground"
               className="w-full"
-              href="#"
+              href={item.href || "#"}
               size="lg"
             >
-              {item}
+              {item.menu}
             </Link>
           </NavbarMenuItem>
         ))}

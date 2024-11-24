@@ -1,12 +1,14 @@
 import React from 'react'
-import Home from "@/app/home/Home.jsx"
-import About from "@/app/about/About.jsx"
+import Home from "@/app/components/Home.jsx"
+import About from "@/app/components/About.jsx"
+import Projects from "@/app/components/Projects.jsx"
 
 const page = () => {
   return (
     <div className='text-center py-20 mx-20'>
       <Home/>
       <About/>
+      <Projects/>
     </div>
   )
 }

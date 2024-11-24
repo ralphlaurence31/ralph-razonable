@@ -3,6 +3,7 @@
 import React, {useEffect} from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {Tooltip} from "@nextui-org/react";
 import Image from 'next/image'
 import htmlIcon from "@/public/assets/html.png";
 import cssIcon from '@/public/assets/css.png';
@@ -50,13 +51,15 @@ const technologies = [
             <div className='myTechnologies mt-5 flex flex-wrap justify-around gap-5 gap-y-[3rem]' data-aos="fade-up">
               {technologies.map((technologies, index) => (
                 <ul key={index} className='relative inline-flex  gap-[50px] mt-5'>
-                  <li className='cursor-pointer transition-all duration-300 hover:-translate-y-5'title={technologies.pointer} alt={technologies.pointer} data-tooltip-target="tooltip-dark"><Image 
+                  <Tooltip content={technologies.pointer}>
+                    <Image 
                     src={technologies.icon} 
                     alt={technologies.pointer} 
                     width={50} 
                     height={50} 
-                    className='cursor-pointer transition-all duration-300 hover:-translate-y-5' 
-                    /></li>
+                    className='cursor-pointer transition-all duration-200 hover:-translate-y-1' 
+                    />
+                  </Tooltip>
                 </ul>
                 
               ))}
