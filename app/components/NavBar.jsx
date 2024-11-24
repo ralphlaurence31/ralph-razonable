@@ -17,7 +17,7 @@ export default function NavBar() {
   const menuItems = [
     {menu:"Home", href: "/"},
     {menu:"About", href: "#about-me"},
-    {menu:"Projects", href: "#my-project"},
+    {menu:"Projects", href: "#my-projects"},
     {menu:"Contact", href: "#contact"},
     
   ];
@@ -29,7 +29,6 @@ export default function NavBar() {
   }, []);
 
   if(!mounted) return null;
-
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="py-5 fixed bg-white shadow-md dark:bg-gray-900">
@@ -85,7 +84,7 @@ export default function NavBar() {
           </div>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu className="mt-10">
+      <NavbarMenu className="mt-10 w-1/2">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item.menu}-${index}`}>
             <Link

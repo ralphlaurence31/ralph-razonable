@@ -75,7 +75,7 @@ function Contact() {
             <p className='text-lr text-center font-light mt-3'>If you want to know more about me, please contact me below.</p>
         </div>
 
-        <Form onSubmit={sendEmail} action='#' className='mt-5 rounded-md p-5 w-full max-w-lg mx-auto text-center'>
+        <Form  action='#' className='mt-5 rounded-md p-5 w-full max-w-lg mx-auto text-center'>
             <div className="flex flex-wrap justify-center gap-4">
                 
                 <div className="w-full max-w-xs">
@@ -87,7 +87,7 @@ function Contact() {
                 </div>
 
                 <div className="w-full max-w-xs">
-                    <Input type="email" label="Email" />
+                    <Input type="email" label="Email" autocomplete="email"/>
                 </div>
 
                 <div className="w-full max-w-xs">
@@ -98,7 +98,7 @@ function Contact() {
                     <Textarea label="Message" placeholder="Enter your message" />
                 </div>
 
-                <Button className="bg-green-700 hover:bg-green-800 text-white w-full max-w-xs mt-4">
+                <Button type="submit" className="bg-green-700 hover:bg-green-800 text-white w-full max-w-xs mt-4">
                 Submit
                 </Button>
             </div>
