@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import Image from 'next/image'
 import avatar from "@/public/assets/avatar.png";
@@ -5,6 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import {Button} from "@nextui-org/react";
 import 'aos/dist/aos.css';
 
 const page = () => {
@@ -25,9 +27,9 @@ const page = () => {
                   <li className='text-3xl text-green-700 hover:text-green-800'><a href="https://www.linkedin.com/in/ralph-laurence-razonable-b39622245/" target='_blank'><FaLinkedin /></a></li>
               </ul>
 
-              <button type='button' className='btn w-auto text-white text-center mt-5 w-[130px] bg-green-700 hover:bg-green-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 flex items-center gap-1'>
+              <Button className='btn mt-5 w-[115px] w-auto bg-green-700 hover:bg-green-800 text-white flex items-center gap-1'>
                 View Resume
-                </button>
+              </Button>
            </div>
         </div>
 

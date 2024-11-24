@@ -2,6 +2,7 @@ import React from 'react'
 import Home from "@/app/components/Home.jsx"
 import About from "@/app/components/About.jsx"
 import Projects from "@/app/components/Projects.jsx"
+import Contact from "@/app/components/Contact.jsx"
 
 const page = () => {
   return (
@@ -9,6 +10,7 @@ const page = () => {
       <Home/>
       <About/>
       <Projects/>
+      <Contact/>
     </div>
   )
 }

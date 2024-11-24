@@ -49,7 +49,7 @@ function Projects() {
                 <Link
                   isExternal
                   showAnchorIcon
-                  href={projects.link}
+                  href={project.link}
                   className="cursor-pointer"
                 >
                   Visit Link

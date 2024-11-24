@@ -63,7 +63,7 @@ export default function NavBar() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" className='hover:text-green-800 hover:border-b-2 border-green-800 flex items-center gap-1 text-xl dark:text-white dark:hover:text-green-700'>
+          <Link color="foreground" href="#contact" className='hover:text-green-800 hover:border-b-2 border-green-800 flex items-center gap-1 text-xl dark:text-white dark:hover:text-green-700'>
           <RiContactsBook2Fill />Contact
           </Link>
         </NavbarItem>
