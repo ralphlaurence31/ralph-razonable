@@ -24,7 +24,7 @@ const projects = [
 function Projects() {
   
   return (
-    <div className='transition-all duration-1200 titleTechnologies mt-20' id='my-projects' data-aos="fade-up">
+    <div className='transition-all duration-1200 titleTechnologies mt-20 mx-10' id='my-projects' data-aos="fade-up">
       <p className='text-3xl text-center'>Projects</p>
 
       <div className='w-full gap-4 mt-10 grid md:grid-cols-4 grid-cols-1 p-5'>

@@ -34,7 +34,7 @@ const technologies = [
       }, []);
 
   return (
-    <div className='about-me mt-20 mx-10' id='about-me'>
+    <div className='about-me mt-20' id='about-me'>
 
       <div className='aboutMeText' data-aos="fade-up">
         <p className='text-3xl text-center'>About</p>
@@ -48,7 +48,7 @@ const technologies = [
                 <p className='text-3xl text-center'>Technologies</p>
             </div>
 
-            <div className='myTechnologies mt-5 flex flex-wrap justify-around gap-5 gap-y-[3rem]' data-aos="fade-up">
+            <div className='myTechnologies mt-5 flex flex-wrap justify-around gap-5 gap-y-[3rem] mx-10' data-aos="fade-up">
               {technologies.map((technologies, index) => (
                 <ul key={index} className='relative inline-flex  gap-[50px] mt-5'>
                   <Tooltip content={technologies.pointer}>

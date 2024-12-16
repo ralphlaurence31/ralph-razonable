@@ -6,13 +6,15 @@ import Contact from "@/app/components/Contact.jsx"
 
 const page = () => {
   return (
-    <div className='text-center py-20 mx-10'>
+    <div className='text-center py-20 mx-3'>
       <Home/>
       <About/>
       <Projects/>
       <Contact/>
     </div>
-  )
+    
+    
+  ) 
 }
 
 export default page
