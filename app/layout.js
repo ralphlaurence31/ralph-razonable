@@ -6,7 +6,6 @@ import "./globals.css";
 import Provider from "./Provider";
 import {ThemeProvider as NextThemesProvider} from "next-themes";
 
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,6 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
