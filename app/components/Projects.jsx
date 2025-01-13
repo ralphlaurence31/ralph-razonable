@@ -17,7 +17,14 @@ const projects = [
     title: 'myclassmates-crud',
     description: 'This project used Tailwind CSS for UI, PHP for backend.',
     link: 'https://github.com/ralphlaurence31/crud-myclassmates'
+  },
+  {
+    imageUrl: "/assets/to-do.png",
+    title: 'To-Do-List',
+    description: 'This project used HTML, CSS, and JavaScript',
+    link: 'https://to-do-app-beta-liard.vercel.app/'
   }
+
    
 ];
 
