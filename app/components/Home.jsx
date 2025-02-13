@@ -29,7 +29,7 @@ const page = () => {
               </ul>
 
               <Button className='btn mt-5 w-[115px] w-auto bg-green-700 hover:bg-green-800 text-white flex items-center gap-1'>
-                <a href="https://drive.google.com/file/d/1gePfcyRtOIrWHjuUBjbMFWOlmqp5at-N/view?usp=sharing" target='_blank'>View Resume</a>
+                <a href="https://drive.google.com/file/d/1SXzmLDp-WB_inr4AgU4__TaK_nl2qz9R/view?usp=sharing" target='_blank'>View Resume</a>
               </Button>
              
            </div>
