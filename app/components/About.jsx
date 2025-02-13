@@ -36,15 +36,26 @@ const technologies = [
   return (
     <div className='about-me mt-20' id='about-me'>
 
-      <div className='aboutMeText' data-aos="fade-up">
+      <div className='aboutt' data-aos="fade-down">
         <p className='text-3xl text-center'>About</p>
-        <p className='text-justify mt-5 p-5'>I am Ralph Laurence S. Razonable, 23 years old. I recently graduated from Cavite State University - Imus Campus with a Bachelor’s degree in Information Technology. I completed my internship at South Imus Specialist Hospital. I am currently studying web technology tools to upskill myself.</p>
+      </div>
+
+      <div className='aboutt' data-aos="fade-up">
+        <p className='text-justify mt-5 p-5'>I am Ralph Laurence S. Razonable, 23 years old.
+            I recently graduated from Cavite State University - Imus Campus with a Bachelor’s degree in Information Technology. 
+           I completed my internship at South Imus Specialist Hospital. I am currently studying web technology tools to upskill 
+           myself. </p>
+
+          <p className='text-justify mt-5 p-5'>
+          I am passionate, willing to enhance my skills, expand my knowledge and hardworking that give his all in all aspects of his job. 
+          I am willing to try new things and take criticism. Seeking an opportunity in the IT industry.
+          </p>
       
       </div>
 
       <div className='myTechnologies'>
 
-            <div className='titleTechnologies mt-20' data-aos="fade-up">
+            <div className='titleTechnologies mt-20' data-aos="fade-down">
                 <p className='text-3xl text-center'>Technologies</p>
             </div>
 
