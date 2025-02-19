@@ -31,7 +31,7 @@ export default function NavBar() {
   if(!mounted) return null;
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="py-5 fixed bg-white shadow-md dark:bg-gray-900">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="py-5 fixed bg-white shadow-md transition-colors duration-500 ease-in-out dark:bg-gray-900">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
